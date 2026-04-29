@@ -55,5 +55,9 @@ git add .
 git status
 git commit -m "done"
 git remote add origin "repolink"
+git branch -m master
 git push -u origin master
 
+
+
+git clone https://github.com/moumita02314/testds.git
