@@ -25,17 +25,10 @@ npm install
 node index.js
 //////////////////////////////////////////////
 
-cd /
-cd etc/nginx/sites-available/
-sudo nano default
-sudo systemctl restart nginx
-sudo systemctl stop nginx
-///////////////////////////////////////////
-
-
 Open another terminal. Type the following commands:
-Cd / pwd
-cd /etc/nginx/site-available/ 
+cd / 
+pwd
+cd /etc/nginx/sites-available/ 
 sudo nano default
 
 Now in the nano editor go to location and paste the following code: location / {
@@ -43,9 +36,7 @@ proxy_pass http://localhost:4000; proxy_http_version 1.1;
 proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection 'upgrade'; proxy_set_header Host $host; proxy_cache_bypass $http_upgrade;
 }
 Now back to bash shell
-Type: sudo systemctl restart nginx Then type: node index.js
-
-
+Type: sudo systemctl restart nginx 
 8)
 git config --global user.name "bhumiprasad14"
 git config --global user.email "prasad14bhumi@gmail.com"
