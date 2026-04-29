@@ -1,4 +1,4 @@
-11)
+11)12)1stpart
 apt-get update
 apt-get install -y nginx
 systemctl start nginx
