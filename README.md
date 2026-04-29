@@ -6,8 +6,8 @@ systemctl enable nginx
 apt-get install -y git
 curl -SL https://deb.nodesource.com/setup_16.x|sudo -E bash -
 apt-get install -y nodejs
-git clone http://github.com/sudip7407/Repo1.git
-cd Repo1
+git clone https://github.com/bhumiprasad14/MyAwsRepo.git
+cd MyAwsRepo
 npm install
 node index.js
 
@@ -19,8 +19,8 @@ sudo apt-get install nginx
 curl -SL https://deb.nodesource.com/setup_16.x|sudo -E bash -
 sudo apt install nodejs
 nodejs -v
-git clone http://github.com/sudip7407/Repo1.git
-cd Repo1
+git clone https://github.com/bhumiprasad14/MyAwsRepo.git
+cd MyAwsRepo
 npm install
 node index.js
 //////////////////////////////////////////////
