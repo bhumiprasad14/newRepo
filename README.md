@@ -77,21 +77,66 @@ This is Previous Page
 
 🏠 Go to Home
 
-8)LOcal machine to github create a github token create a folder on yout desktop and open it in gitbash then commands: git clone https://github.com/soumalyokundu123/aws_assg8.git cd aws_assg8 git config --global user.email "soumalyokundu123@gmail.com" git config --global user.name "soumalyokundu123" git config --global --list IF ANY OTHER EMAIL OR NAME WE CAN REMOVE IT: (git config --global --unset user.name git config --global --unset user.email) git init git add . git status git commit -m "done" git remote add origin https://github.com/soumalyokundu123/assg.git git push -u origin master
+8)LOcal machine to github create a github token create a folder on yout desktop and open it in gitbash then commands: 
+git clone https://github.com/soumalyokundu123/aws_assg8.git 
+cd aws_assg8 
+git config --global user.email "soumalyokundu123@gmail.com" 
+git config --global user.name "soumalyokundu123" git config --global --list 
+IF ANY OTHER EMAIL OR NAME WE CAN REMOVE IT: (git config --global --unset user.name git config --global --unset user.email) 
+git init 
+git add . 
+git status 
+git commit -m "done" 
+git remote add origin https://github.com/soumalyokundu123/assg.git 
+git push -u origin master
 
 9)Github to EC2 using terminal sudo apt-get update sudo apt-get upgrade -y sudo apt install nginx sudo systemctl start nginx sudo systemctl enable nginx
 
-sudo apt install nodejs -y curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - git clone https://github.com/soumalyokundu123/aws_assg8.git cd aws_assg8 sudo apt install npm npm install node index.js
+sudo apt install nodejs -y 
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
+git clone https://github.com/soumalyokundu123/aws_assg8.git 
+cd aws_assg8 
+sudo apt install npm 
+npm install 
+node index.js
 
-10)Github to EC2 using user data apt-get update apt-get install -y nginx systemctl start nginx systemctl enable nginx
-
-curl -SL https://deb.nodesource.com/setup_18.x | sudo -E bash - apt-get install -y nodejs git clone https://github.com/soumalyokundu123/aws_assg8.git cd aws_assg8 npm install node index.js
+10)Github to EC2 using user data 
+apt-get update 
+apt-get install -y nginx 
+systemctl start nginx 
+systemctl enable nginx
+curl -SL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
+apt-get install -y nodejs 
+git clone https://github.com/soumalyokundu123/aws_assg8.git 
+cd aws_assg8 
+npm install 
+node index.js
 
 11)Load balancer Launch template then auto scale choose any one instance and open bitvise vi infi.sh code sudo chmod 777 infi.sh sh infi.sh
 
-12)without port sudo apt-get update sudo apt-get upgrade -y sudo apt install nginx sudo systemctl start nginx sudo systemctl enable nginx
-
-sudo apt install nodejs -y curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - git clone https://github.com/soumalyokundu123/aws_assg8.git cd aws_assg8 sudo apt install npm npm install node index.js another terminal: cd / pwd cd /etc/nginx/sites-available/ sudo nano default location / { proxy_pass http://localhost:4000; proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection 'upgrade'; proxy_set_header Host $host; proxy_cache_bypass $http_upgrade; } sudo systemctl restart nginx
+12)without port 
+sudo apt-get update 
+sudo apt-get upgrade -y 
+sudo apt install nginx 
+sudo systemctl start nginx 
+sudo systemctl enable nginx
+sudo apt install nodejs -y 
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
+git clone https://github.com/soumalyokundu123/aws_assg8.git 
+cd aws_assg8 
+sudo apt install npm 
+npm install 
+node index.js 
+another terminal: cd / pwd cd /etc/nginx/sites-available/ 
+sudo nano default location / { 
+proxy_pass http://localhost:4000; 
+proxy_http_version 1.1; 
+proxy_set_header Upgrade $http_upgrade; 
+proxy_set_header Connection 'upgrade'; 
+proxy_set_header Host $host; 
+proxy_cache_bypass $http_upgrade; 
+} 
+sudo systemctl restart nginx
 
 14)elastic ip instance create without code then elstic ip create allocate->upar green wala associate
 
